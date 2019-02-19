@@ -183,7 +183,7 @@ class RDF_Triple():
                         rdf_type_attr.append((item.leaves()[0], item.label()))
                     if item.label() in ['QP', 'NP']:
                         #append a tree
-                        rdf_type_attr.append(item, item.label())
+                        rdf_type_attr.append((item, item.label()))
             elif pos[:2] == 'VB':
                 for item in sibling_tree:
                     if item.label()[:2] == 'AD':
